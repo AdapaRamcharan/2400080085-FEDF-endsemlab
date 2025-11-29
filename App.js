@@ -20,18 +20,17 @@ export default function App() {
       const dobDate = dob.getDate();
 
       if (dobMonth === currentMonth && dobDate === currentDate) {
-        toast.success(`🎉 Today is ${student.name}'s Birthday!`);
+        toast.success(` Today is ${student.name}'s Birthday!`);
       }
     });
 
-    // ✅ Force a birthday wish NOW (you can change the name)
-    toast.success("🎉 Happy Birthday, Arun! 🎂");
+    toast.success(" Happy Birthday, Arun! ");
 
   }, []);
 
   return (
     <div style={{ padding: "20px" }}>
-      <h2>🎂 Student Birthday Reminder</h2>
+      <h2> Student Birthday Reminder</h2>
       <p>Notifications will appear if today is any student's birthday.</p>
 
       <Toaster position="top-right" />
